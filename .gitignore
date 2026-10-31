@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+data/chronos_x.sqlite3
+data/chronos_x.sqlite3-shm
+data/chronos_x.sqlite3-wal

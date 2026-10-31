@@ -1,0 +1,128 @@
+[
+  {
+    "id": "e7a29699-3968-547c-bdae-d7314f8fd98f",
+    "timestamp": "2026-01-01T00:00:09Z",
+    "received_at": "2026-01-01T00:00:09Z",
+    "source": "EQ-002",
+    "event_type": "gradual_temperature_increase",
+    "description": "Simulated gradual temperature increase.",
+    "severity": "medium",
+    "provenance": {
+      "origin": "synthetic_generator",
+      "source_verified": true
+    },
+    "metadata": {
+      "equipment_id": "EQ-002",
+      "scenario_id": "484cbe39-f83f-5982-b655-8d51c969101b",
+      "fault_type": "gradual_temperature_increase"
+    }
+  },
+  {
+    "id": "74516dd2-4825-5cb0-a98a-286bb75686ed",
+    "timestamp": "2026-01-01T01:23:22Z",
+    "received_at": "2026-01-01T01:23:34Z",
+    "source": "EQ-003",
+    "event_type": "sudden_pressure_increase",
+    "description": "Simulated sudden pressure increase.",
+    "severity": "medium",
+    "provenance": {
+      "origin": "synthetic_generator",
+      "source_verified": true
+    },
+    "metadata": {
+      "equipment_id": "EQ-003",
+      "scenario_id": "194182bf-a031-5f9d-8b68-8da00a2c5598",
+      "fault_type": "sudden_pressure_increase"
+    }
+  },
+  {
+    "id": "13b38907-e53b-5062-b5aa-3bc4f6297c6b",
+    "timestamp": "2026-01-01T01:23:23Z",
+    "received_at": "2026-01-01T01:23:23Z",
+    "source": "EQ-004",
+    "event_type": "cooling_pump_failure",
+    "description": "Simulated cooling pump failure.",
+    "severity": "medium",
+    "provenance": {
+      "origin": "synthetic_generator",
+      "source_verified": true
+    },
+    "metadata": {
+      "equipment_id": "EQ-004",
+      "scenario_id": "9da96018-1070-5ac5-a767-1064904a9bf3",
+      "fault_type": "cooling_pump_failure"
+    }
+  },
+  {
+    "id": "470426f4-4950-599e-98ef-70fcc542a6d3",
+    "timestamp": "2026-01-01T01:23:24Z",
+    "received_at": "2026-01-01T01:23:24Z",
+    "source": "EQ-005",
+    "event_type": "power_interruption",
+    "description": "Simulated power interruption.",
+    "severity": "medium",
+    "provenance": {
+      "origin": "synthetic_generator",
+      "source_verified": true
+    },
+    "metadata": {
+      "equipment_id": "EQ-005",
+      "scenario_id": "2c570474-797d-5b7c-85da-3af789213b4e",
+      "fault_type": "power_interruption"
+    }
+  },
+  {
+    "id": "d863ab94-b14e-5d99-8412-a0cd09049f5f",
+    "timestamp": "2026-01-01T01:23:25Z",
+    "received_at": "2026-01-01T01:23:25Z",
+    "source": "EQ-006",
+    "event_type": "equipment_malfunction",
+    "description": "Simulated equipment malfunction.",
+    "severity": "medium",
+    "provenance": {
+      "origin": "synthetic_generator",
+      "source_verified": true
+    },
+    "metadata": {
+      "equipment_id": "EQ-006",
+      "scenario_id": "4d27211e-d16f-5797-9804-d7feec834b53",
+      "fault_type": "equipment_malfunction"
+    }
+  },
+  {
+    "id": "21956034-fd19-5888-ad1c-b8a1ae4fb6cb",
+    "timestamp": "2026-01-01T01:23:26Z",
+    "received_at": "2026-01-01T01:23:26Z",
+    "source": "EQ-007",
+    "event_type": "multiple_simultaneous_faults",
+    "description": "Simulated multiple simultaneous faults.",
+    "severity": "high",
+    "provenance": {
+      "origin": "synthetic_generator",
+      "source_verified": true
+    },
+    "metadata": {
+      "equipment_id": "EQ-007",
+      "scenario_id": "4144984a-d2f7-59e8-a6ba-98c98fda42cf",
+      "fault_type": "multiple_simultaneous_faults"
+    }
+  },
+  {
+    "id": "20624b5d-01ea-5d56-832b-41e992be10a8",
+    "timestamp": "2026-01-01T01:23:27Z",
+    "received_at": "2026-01-01T01:23:27Z",
+    "source": "EQ-008",
+    "event_type": "sensor_malfunction",
+    "description": "Simulated sensor malfunction.",
+    "severity": "medium",
+    "provenance": {
+      "origin": "synthetic_generator",
+      "source_verified": true
+    },
+    "metadata": {
+      "equipment_id": "EQ-008",
+      "scenario_id": "66c5a577-097e-5ca1-85fb-1c3025fa41ed",
+      "fault_type": "sensor_malfunction"
+    }
+  }
+]

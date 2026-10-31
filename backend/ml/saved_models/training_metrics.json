@@ -1,0 +1,79 @@
+{
+  "random_state": 42,
+  "data_dir": "data",
+  "model_dir": "backend\\ml\\saved_models",
+  "artifacts": {
+    "isolation_forest": "backend\\ml\\saved_models\\isolation_forest.joblib",
+    "random_forest_regressor": "backend\\ml\\saved_models\\random_forest_predictor.joblib"
+  },
+  "isolation_forest": {
+    "training_scenario": "normal",
+    "training_records": 1000,
+    "held_out_normal_records": 250,
+    "evaluation_records": 9000,
+    "ground_truth_fault_records": 4999,
+    "detected_anomaly_records": 1967,
+    "true_positive": 1911,
+    "false_positive": 56,
+    "false_negative": 3088,
+    "feature_names": [
+      "temperature_c",
+      "pressure_kpa",
+      "vibration_mm_s",
+      "cooling_pump_status",
+      "power_supply_status",
+      "smoke_detected"
+    ],
+    "contamination": 0.01,
+    "random_state": 42,
+    "evaluation_note": "Ground truth is used only for evaluation, never as an Isolation Forest feature. The newest 20% of normal readings and all non-training scenarios are held out."
+  },
+  "random_forest_regressor": {
+    "horizon_readings": 5,
+    "training_records": 7955,
+    "testing_records": 1989,
+    "training_target_end": "2026-01-01T02:13:30+00:00",
+    "testing_target_start": "2026-01-01T02:13:31+00:00",
+    "feature_names": [
+      "temperature_c_lag_1",
+      "temperature_c_lag_2",
+      "temperature_c_rolling_mean_3",
+      "temperature_c_trend_3",
+      "pressure_kpa_lag_1",
+      "pressure_kpa_lag_2",
+      "pressure_kpa_rolling_mean_3",
+      "pressure_kpa_trend_3",
+      "vibration_mm_s_lag_1",
+      "vibration_mm_s_lag_2",
+      "vibration_mm_s_rolling_mean_3",
+      "vibration_mm_s_trend_3",
+      "cooling_pump_status",
+      "power_supply_status",
+      "smoke_detected"
+    ],
+    "target_metrics": {
+      "future_temperature_c": {
+        "mae": 2.487428,
+        "rmse": 4.74945,
+        "r_squared": 0.973495,
+        "samples": 1989
+      },
+      "future_pressure_kpa": {
+        "mae": 1.473422,
+        "rmse": 1.936725,
+        "r_squared": 0.98154,
+        "samples": 1989
+      }
+    },
+    "leakage_controls": [
+      "IDs, ground-truth labels, scenario names, receive timestamps, and future targets are excluded from model features.",
+      "Target rows are shifted forward within each equipment stream.",
+      "Train/test split is chronological by target timestamp with no target-time overlap."
+    ],
+    "random_state": 42
+  },
+  "models_trained": [
+    "IsolationForest",
+    "RandomForestRegressor"
+  ]
+}
